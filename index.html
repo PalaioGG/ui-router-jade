@@ -1,0 +1,27 @@
+<DOCTYPE!>
+<html ng-app='myApp'>
+	<head>
+		<!-- ANGULARJS -->
+		<script src="/node_modules/angular/angular.js"></script>
+		<!-- ANGULAR-UI-ROUTER -->
+		<script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+		<!-- STATES -->
+		<script src="/public/javascript/app.js"></script>
+		<!-- CONTROLLERS -->
+		<script src="/public/javascript/controllers/main.controller.js"></script>
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css"></link>
+		<!-- CSS -->
+		<link rel="stylesheet" href="public/stylesheets/css/style.css"></link>
+	</head>
+
+	<body>
+
+		<my-navbar></my-navbar>
+
+		<div ui-view></div>
+
+		<my-footer></my-footer>
+
+	</body>
+</html>

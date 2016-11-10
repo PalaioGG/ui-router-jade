@@ -1,0 +1,34 @@
+{
+  "name": "ui-router-jade",
+  "version": "1.0.0",
+  "description": "A working example for UI-Router and Jade pages.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PalaioGG/ui-router-jade.git"
+  },
+  "keywords": [
+    "Jade",
+    "AngularJS",
+    "ui-router",
+    "node.js",
+    "express.js"
+  ],
+  "author": "palaioGG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PalaioGG/ui-router-jade/issues"
+  },
+  "homepage": "https://github.com/PalaioGG/ui-router-jade#readme",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jade": "^1.11.0"
+  }
+}

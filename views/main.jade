@@ -1,0 +1,36 @@
+block content
+	div.main
+		div.container
+			div.row
+				div.col-xs-12
+					h1.text-center
+						span.main-title {{title}} 
+						|ui-view is saying 
+						|"Hello 
+						|from 
+						|Jade"
+			div.row
+				div.col-xs-12.col-md-6
+					p This website showcases how you can use ui-router and Jade together.
+						| It started as an attempt to test Jade template
+						| but during development some problems occured.
+					p Angular-UI-Router can only accept .html pages in it's states
+						| so when you are passing in the state's templateUrl something like:
+						| "directory/somepage.jade", ui-router gives you back only text.
+						| One way to "fix" this is to make a call to the server so you can
+						| GET the rendered page. Makes sense.
+					p So, what I've done is this. In app.js (where the ui-router lives),
+						| in the 'main' state, I passed templateUrl: 'main'. It's like telling the browser 
+						| "Hey, go to localhost:3000/main". Server is listening for the request
+						| so back there a GET request is waiting for "/main" to render the "main.jade".
+					p Finally, what comes back is main.jade rendered as main.html
+					p I guess it's a noob problem but I thought to share it so it's available in the future as
+						| it can be usefull for scaffolding.
+				div.col-xs-12.col-md-6
+					div.img-wrapper
+						div.jade-logo
+							img(alt="Jade Logo", src="./public/img/jade-logo-1.png")
+			div.row
+				div.col-xs-12
+					div.ui-router-wrapper
+						img.ui-router(alt="ui-router", src="./public/img/angular-routing-ui-router.jpg")
